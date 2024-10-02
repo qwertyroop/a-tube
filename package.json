@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "A backend for a-tube",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/index.js"
   },
   "keywords": [
     "a-code",
@@ -12,5 +13,8 @@
     "backend"
   ],
   "author": "Roopesh",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
 }
