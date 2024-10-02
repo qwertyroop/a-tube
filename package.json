@@ -1,0 +1,16 @@
+{
+  "name": "a-tube",
+  "version": "1.0.0",
+  "description": "A backend for a-tube",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "a-code",
+    "javascript",
+    "backend"
+  ],
+  "author": "Roopesh",
+  "license": "ISC"
+}
