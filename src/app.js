@@ -15,4 +15,13 @@ app.use(express.static("public"))
 app.use(cookieParser())
 
 
+//routes import is done here itself.
+import userRouter from "./routes/user.routes.js"
+
+
+//routes declaration
+app.use("/api/v1/users", userRouter) // whenever user goes to "/users" route the control is given to userRoutes which we are importing.
+
+// url example : http://localhost:8000/api/v1/users/register
+
 export { app }
