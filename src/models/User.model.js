@@ -52,7 +52,7 @@ userSchema.pre("save", async function (next) {
     // here we can see if the field is modified or not by
     // using .isModified hook from the middleware section of mongoose.
     // we will pass a string which is the field name i.e("password")
-    this.password = bcrypt.hash(this.password, 10)
+    this.password = await bcrypt.hash(this.password, 10)
     next()
 })
 
